@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geothermal Well Planning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Geothermal Well Path Comparison 📊</h1>
+        <p class="subtitle">Analyze trade-offs between vertical and directional drilling options.</p>
+
+        <div class="comparison-grid">
+            
+            <div id="vertical-well-card" class="well-card">
+                <h2>Vertical Well (Option A)</h2>
+                <div class="metric-list">
+                    <p>Total Cost: <span id="cost-a" class="data-value">--</span></p>
+                    <p>Drilling Time: <span id="time-a" class="data-value">--</span></p>
+                    <p>Energy Output: <span id="output-a" class="data-value">--</span></p>
+                    <p>Geological Risk: <span id="risk-a" class="data-value">--</span></p>
+                </div>
+            </div>
+
+            <div id="directional-well-card" class="well-card">
+                <h2>Directional Well (Option B)</h2>
+                <div class="metric-list">
+                    <p>Total Cost: <span id="cost-b" class="data-value">--</span></p>
+                    <p>Drilling Time: <span id="time-b" class="data-value">--</span></p>
+                    <p>Energy Output: <span id="output-b" class="data-value">--</span></p>
+                    <p>Geological Risk: <span id="risk-b" class="data-value">--</span></p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div> 
+
+<button id="recommendation-btn">Run Recommendation Analysis</button>
+        
+        <div id="recommendation-output" class="recommendation-box">
+            Recommendation: Click the button to see the best well path.
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
